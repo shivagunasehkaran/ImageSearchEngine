@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home screen renders correctly with all home screen values 1`] = `ShallowWrapper {}`;
+
+exports[`Home screen should render input element properly 1`] = `ShallowWrapper {}`;

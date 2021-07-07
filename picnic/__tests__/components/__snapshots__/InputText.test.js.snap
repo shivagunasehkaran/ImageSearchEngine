@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputText component validation renders correctly with input textfield 1`] = `ShallowWrapper {}`;

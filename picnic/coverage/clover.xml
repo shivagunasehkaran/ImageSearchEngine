@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1624976324706" clover="3.2.0">
+  <project timestamp="1624976324706" name="All files">
+    <metrics statements="72" coveredstatements="43" conditionals="20" coveredconditionals="6" methods="26" coveredmethods="11" elements="118" coveredelements="60" complexity="0" loc="72" ncloc="72" packages="7" files="16" classes="16"/>
+    <package name="assets.img">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="search.png" path="/Users/apple/Documents/Freelance/picnic/picnic/src/assets/img/search.png">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="assets.styles">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="ColoursStyles.ts" path="/Users/apple/Documents/Freelance/picnic/picnic/src/assets/styles/ColoursStyles.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+      </file>
+      <file name="Images.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/assets/styles/Images.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Details">
+      <metrics statements="7" coveredstatements="6" conditionals="9" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="Details.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/components/Details/Details.js">
+        <metrics statements="6" coveredstatements="5" conditionals="9" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="cond" truecount="2" falsecount="3"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+      </file>
+      <file name="Details.style.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/components/Details/Details.style.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/components/Details/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.FastImage">
+      <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <file name="FastImage.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/components/FastImage/FastImage.js">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/components/FastImage/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.Input">
+      <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+      <file name="InputText.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/components/Input/InputText.js">
+        <metrics statements="5" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+      </file>
+      <file name="InputText.style.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/components/Input/InputText.style.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/components/Input/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="services">
+      <metrics statements="13" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="6"/>
+      <file name="Constants.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/services/Constants.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+      </file>
+      <file name="Services.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/services/Services.js">
+        <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="6"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="views.Home">
+      <metrics statements="38" coveredstatements="16" conditionals="9" coveredconditionals="1" methods="11" coveredmethods="2"/>
+      <file name="Home.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/views/Home/Home.js">
+        <metrics statements="37" coveredstatements="15" conditionals="9" coveredconditionals="1" methods="11" coveredmethods="2"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="22" count="7" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="41" count="7" type="stmt"/>
+        <line num="44" count="7" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="62" count="7" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="68" count="7" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="76" count="7" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+      </file>
+      <file name="Home.style.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/views/Home/Home.style.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/apple/Documents/Freelance/picnic/picnic/src/views/Home/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>
