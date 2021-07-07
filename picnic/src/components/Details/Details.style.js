@@ -1,4 +1,4 @@
-import {ColourPalette} from '@assets/styles/ColoursStyles';
+import {ColourPalette} from '@assets/styles/ColourPalette';
 import {StyleSheet} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 

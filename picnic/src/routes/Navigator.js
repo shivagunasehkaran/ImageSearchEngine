@@ -4,7 +4,7 @@ import React from 'react';
 import * as ROUTES from '@routes/Routes';
 import ImageDetails from '@views/ImageDetails';
 import Home from '@views/Home';
-import {ColourPalette} from '@assets/styles/ColoursStyles';
+import {ColourPalette} from '@assets/styles/ColourPalette';
 
 const PublicStack = createStackNavigator();
 

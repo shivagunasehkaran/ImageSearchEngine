@@ -1,4 +1,4 @@
-import {ColourPalette} from '@assets/styles/ColoursStyles';
+import {ColourPalette} from '@assets/styles/ColourPalette';
 import {StyleSheet} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 
@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   inputContainer: {
     flex: 4,
     height: moderateScale(45),
-    backgroundColor: ColourPalette.textInputColor,
+    backgroundColor: ColourPalette.lightGrey,
     flexDirection: 'row',
     alignItems: 'center',
     margin: 20,

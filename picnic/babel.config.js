@@ -1,9 +1,6 @@
 module.exports = {
-  presets: [
-    '@babel/preset-env',
-    '@babel/preset-react',
-    'module:metro-react-native-babel-preset',
-  ],
+  presets: ['module:metro-react-native-babel-preset'],
+  sourceMaps: true,
   env: {
     production: {
       plugins: ['@babel/plugin-transform-runtime'],

@@ -8,9 +8,16 @@
 
 import React from 'react';
 import PrimaryContainer from '@containers/PrimaryContainer';
+import {NavigationContainer} from '@react-navigation/native';
 
 const App = () => {
-  return <PrimaryContainer />;
+  return (
+    <>
+      <NavigationContainer>
+        <PrimaryContainer />
+      </NavigationContainer>
+    </>
+  );
 };
 
 export default App;

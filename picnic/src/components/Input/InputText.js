@@ -9,7 +9,7 @@ const InputText = props => {
     onFocus,
     onSubmit,
     onClear,
-    showCancel,
+    isCancelButtonShown,
     handleCancel,
   } = props;
   return (
@@ -27,13 +27,13 @@ const InputText = props => {
           keyboardType={'email-address'}
           returnKeyType={'search'}
         />
-        {showCancel && (
+        {isCancelButtonShown && (
           <TouchableOpacity style={styles.clearIcon} onPress={() => onClear()}>
             <Image source={images.images.clear} />
           </TouchableOpacity>
         )}
       </View>
-      {showCancel && (
+      {isCancelButtonShown && (
         <TouchableOpacity style={styles.cancel} onPress={() => handleCancel()}>
           <Text>{'Cancel'}</Text>
         </TouchableOpacity>

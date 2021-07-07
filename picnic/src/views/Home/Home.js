@@ -1,29 +1,28 @@
 import Details from '@components/Details';
-import Error from '@components/Error';
 import FastImage from '@components/FastImage';
 import InputText from '@components/Input';
+import * as ROUTES from '@routes/Routes';
 import {getRandomAPI, getSearchAPI} from '@services/Services';
+import {ConstantsText} from '@utills/Constants';
 import {styles} from '@views/Home/Home.style';
 import React, {useEffect, useRef, useState} from 'react';
 import {
+  ActivityIndicator,
   FlatList,
   Keyboard,
   SafeAreaView,
   Text,
   TouchableOpacity,
   View,
-  ActivityIndicator,
 } from 'react-native';
-import * as ROUTES from '@routes/Routes';
-import {ConstantsText} from '@utills/Constants';
 
 const Home = props => {
   const [keyword, setKeyword] = useState('');
   const [stateName, setStateName] = useState(ConstantsText.randomSelected);
-  const [keyBoardFocus, setKeyBoardFocus] = useState(false);
+  const [isKeyBoardFocus, setKeyBoardFocus] = useState(false);
   const [randomData, setRandomData] = useState([]);
   const [searchData, setSearchData] = useState([]);
-  const [showCancel, setShowCancel] = useState(false);
+  const [isCancelButtonShown, setCancelButtonShown] = useState(false);
   const [isLoading, setLoading] = useState(false);
   const interval = useRef();
 
@@ -44,7 +43,7 @@ const Home = props => {
   }
 
   // search API calls after typed 2 chars
-  const handleSearchInput = async val => {
+  const handleSearchAPIRequest = async val => {
     setKeyword(val);
     if (keyword.length == 1) {
       let data = await getSearchAPI(keyword);
@@ -76,24 +75,32 @@ const Home = props => {
     );
   };
 
+  const setTextInputvalues = (cancelflag, text, focusFlag) => {
+    // flag for cancel button
+    setCancelButtonShown(cancelflag);
+    // txt constants
+    setStateName(text);
+    // flag for keyboard focus
+    setKeyBoardFocus(focusFlag);
+  };
+
   // on focus listener
-  const onFocusHandler = () => {
-    setKeyBoardFocus(true);
-    setShowCancel(true);
-    setStateName(ConstantsText.searchResults);
+  const onInputFocusHandler = () => {
+    setTextInputvalues(true, ConstantsText.searchResults, true);
     clearInterval(interval.current); // Clear the interval here
   };
 
-  const handleCancel = () => {
-    setKeyword('');
-    setShowCancel(false);
-    setKeyBoardFocus(false);
-    setStateName(ConstantsText.randomSelected);
-    Keyboard.dismiss();
+  // click cancel
+  const handleCancelButton = () => {
+    handleTextInputClear();
+    // set values for text input
+    setTextInputvalues(false, ConstantsText.randomSelected, false);
+    onSubmitHandler();
     interval.current = setInterval(() => callRandomAPI(), 10000);
   };
 
-  const handleClear = () => {
+  // clear text input
+  const handleTextInputClear = () => {
     setKeyword('');
   };
 
@@ -107,16 +114,16 @@ const Home = props => {
       <SafeAreaView>
         <InputText
           value={keyword}
-          onChangeHandler={val => handleSearchInput(val)}
-          onFocus={() => onFocusHandler()}
-          showCancel={showCancel}
-          handleCancel={() => handleCancel()}
-          onClear={() => handleClear()}
+          onChangeHandler={val => handleSearchAPIRequest(val)}
+          onFocus={() => onInputFocusHandler()}
+          isCancelButtonShown={isCancelButtonShown}
+          handleCancel={() => handleCancelButton()}
+          onClear={() => handleTextInputClear()}
           onSubmit={() => onSubmitHandler()}
         />
         <Text style={styles.stateText}>{stateName}</Text>
         {isLoading && <ActivityIndicator size="large" />}
-        {keyBoardFocus ? (
+        {isKeyBoardFocus ? (
           <View style={{margin: 20}}>
             <FlatList
               data={searchData}
@@ -129,7 +136,6 @@ const Home = props => {
           <Details randomData={randomData} />
         )}
       </SafeAreaView>
-      {/* {!isLoading && <>{!randomData.length ? <Error /> : null}</>}   Error component created to validate { minimal API calls {API rate exceeded} */}
     </View>
   );
 };

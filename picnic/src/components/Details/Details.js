@@ -4,11 +4,15 @@ import {styles} from '@components/Details/Details.style';
 import FastImage from '@components/FastImage';
 
 const Details = props => {
-  const randomData = props.randomData;
-  let URL = null;
+  let randomData = null;
+  let url = null;
   let rating = null;
+
+  if (props) {
+    randomData = props.randomData;
+  }
   if (randomData && randomData.images && randomData.images.downsized_large) {
-    URL = randomData.images.downsized_large.url;
+    url = randomData.images.downsized_large.url;
   }
   if (randomData) {
     rating = randomData.rating;
@@ -16,13 +20,13 @@ const Details = props => {
   return (
     <View style={styles.container}>
       <View style={styles.fastImage}>
-        <FastImage uri={URL} />
+        <FastImage uri={url} />
       </View>
       <View>
         <Text style={styles.textContent}>
           {randomData ? randomData.title : ''}
         </Text>
-        <Text style={styles.textContent}>{URL}</Text>
+        <Text style={styles.textContent}>{url}</Text>
         {rating && (
           <View style={styles.rating}>
             <Text style={styles.ratingText}>{rating}</Text>
